@@ -253,6 +253,14 @@ public class FileFilter extends JPanel implements ActionListener, PropertyChange
             rawFiles.add(fileNameString.substring(0,fileNameString.lastIndexOf('.')));
             setRawFileType(".CR2");
         }
+        if (fileNameString.endsWith(".dng")){
+            rawFiles.add(fileNameString.substring(0,fileNameString.lastIndexOf('.')));
+            setRawFileType(".DNG");
+        }
+        if (fileNameString.endsWith(".raf")){
+            rawFiles.add(fileNameString.substring(0,fileNameString.lastIndexOf('.')));
+            setRawFileType(".RAF");
+        }
         if (fileNameString.endsWith(".xmp")){
             xmpFiles.add(fileNameString.substring(0,fileNameString.indexOf('.')));
         }
